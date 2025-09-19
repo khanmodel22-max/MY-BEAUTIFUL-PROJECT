@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUSTAFA MOBILES</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+    }
+    .navbar {
+      background-color: #222 !important;
+    }
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 8px;
+    }
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .contact-card {
+      background: #111;
+      padding: 25px;
+      border-radius: 12px;
+      color: white;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    }
+    .social-icons a {
+      font-size: 30px;
+      margin: 10px;
+      color: white;
+      transition: 0.3s;
+    }
+    .social-icons a:hover {
+      color: #ffd700;
+      transform: scale(1.2);
+    }
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    /* Carousel Styling */
+    #servicesCarousel {
+      border: 3px solid #ffd700; 
+      border-radius: 15px;
+      background: linear-gradient(135deg, #ffffff, #f1f1f1);
+      overflow: hidden;
+    }
+    #servicesCarousel .carousel-item {
+      min-height: 150px;
+      padding: 30px;
+    }
+    #servicesCarousel h5 {
+      color: #222;
+    }
+    #servicesCarousel p {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="Images/mustafa mobiles logo.png" alt="Mustafa Mobiles Logo"> 
+        MUSTAFA MOBILES
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-5">
+    <h1 class="fw-bold display-4">Welcome to Mustafa Mobiles</h1>
+    <p class="lead">Expert Mobile Repair Services | Quick | Reliable | Affordable</p>
+    <a href="#services" class="btn btn-warning btn-lg mt-3">Explore Our Services</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="container py-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-dark shadow">
+          <img src="Images/mobile 2.jpg" class="card-img-top" alt="Screen Repair">
+          <div class="card-body">
+            <h5 class="card-title">Screen Repair</h5>
+            <p class="card-text">Get your cracked or broken screens replaced with high-quality parts quickly and affordably.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-dark shadow">
+          <img src="Images/mobile 3.jpg" class="card-img-top" alt="Hardware Repair">
+          <div class="card-body">
+            <h5 class="card-title">Hardware Repair</h5>
+            <p class="card-text">We fix all hardware issues including charging ports, speakers, and motherboard problems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-dark shadow">
+          <img src="Images/mobile 4.jpg" class="card-img-top" alt="Expert Technicians">
+          <div class="card-body">
+            <h5 class="card-title">Expert Technicians</h5>
+            <p class="card-text">Our trained technicians ensure quality repairs with professional tools and methods.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AutoPlay Navbar Carousel -->
+    <div id="servicesCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false" data-bs-wrap="true">
+      <div class="carousel-inner text-dark">
+        <div class="carousel-item active text-center bg-white rounded">
+          <h5 class="fw-bold">📱 Fast Screen Replacements</h5>
+          <p>We use premium quality screens to make your phone look brand new.</p>
+        </div>
+        <div class="carousel-item text-center bg-white rounded">
+          <h5 class="fw-bold">⚡ Quick Hardware Fix</h5>
+          <p>Charging ports, speakers & buttons repaired with expert care.</p>
+        </div>
+        <div class="carousel-item text-center bg-white rounded">
+          <h5 class="fw-bold">👨‍🔧 Professional Technicians</h5>
+          <p>Handled by certified experts with advanced tools.</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <img src="Images/contact us logo.png" alt="Contact Us Logo" class="contact-logo">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contact-card">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Send Message</button>
+          </form>
+          <div class="mt-4">
+            <p><i class="fas fa-phone"></i> <a href="tel:9885638367" class="text-white">9885638367</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:khanmodel22@gmail.com" class="text-white">khanmodel22@gmail.com</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/9885638367" target="_blank" class="text-white">Chat on WhatsApp</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="Images/mobile repairing.jpg" class="img-fluid rounded" alt="Contact Us">
+      </div>
+    </div>
+
+    <!-- Follow Us -->
+    <div class="text-center mt-5">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://wa.me/9885638367" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://snapchat.com" target="_blank"><i class="fab fa-snapchat"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us (below Contact) -->
+  <section id="about" class="py-5 bg-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="/mnt/data/9b66fd4c7aebddc03e54ebba0f5c9ecd.jpg" class="img-fluid rounded" alt="About Mustafa Mobiles">
+        </div>
+        <div class="col-md-6">
+          <h2>About Us</h2>
+          <p>Mustafa Mobiles has been serving customers with top-notch mobile repair services for years. From screen replacements to motherboard repairs, we provide reliable and affordable solutions with a focus on customer satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mustafa Mobiles. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
